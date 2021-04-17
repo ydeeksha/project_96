@@ -1,0 +1,60 @@
+<html>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="kwitter.js"></script> 
+    <body>
+       <center>
+        <h1 style="color:white;" style="font-size:200px;">	
+            Kwitter
+            </h1>
+             &nbsp;&nbsp;
+             &nbsp;&nbsp;
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+                    <h3 >See what is happening in the world right now</h3>
+                    &nbsp;&nbsp;
+                    &nbsp;&nbsp;
+                    <h4 >Join Kwitter today</h4>
+                    <div class="form-group">
+                      <label >User Name:</label>
+                      <input type="text" id="user_name" class="form-control" placeholder="user name" style="width: 500;" height="600">
+            <center>
+                <h1>
+
+
+
+
+
+                </h1>
+                    <button id="login_button" class="button" class="btn btn-primary" onclick="add()">Log in</button>
+                    <br><br>
+                    </center>
+                </div>
+        
+       </center>
+    </body>
+    <style>
+    
+    body {
+  background-image: url('blue.jpg');
+}
+button {
+  background-color:lightblue; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 200;
+  
+}
+
+    </style>
+    <script>
+      function add(){
+    user_name= document.getElementById("user_name").value;
+    localStorage.setItem("user_name",user_name);
+    window.location= "Kwitter_room.html";
+}
+    </script>
+</html>
